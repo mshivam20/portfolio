@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import "./index.css";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
+import Skill from "./components/Skill.jsx";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -11,6 +12,7 @@ root.render(
         <Navbar />
         <Home />
         <About />
+        <Skill />
     </React.StrictMode>
 );
 
