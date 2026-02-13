@@ -15,7 +15,7 @@ function Navbar(){
             </div>
         </div>
             
-            <div className={`${isMenuOpen ? "translate-x-0" : "translate-x-96"} justify-self-end top-0 right-0 w-50 h-screen  bg-[#1B263B] transition-transform duration-300`}>
+            <div className={`${isMenuOpen ? "translate-x-0" : "translate-x-96"} nav justify-self-end fixed top-0 right-0 w-50 h-screen  bg-[#1B263B] transition-transform duration-300`}>
                <button className="text-white font-semibold p-4" onClick={()=>setIsMenuOpen(!isMenuOpen)}>close</button>
                <div className="text-white flex flex-col p-4 ">
                 <a href="#home" className="mt-3 font-semibold">Home</a>
