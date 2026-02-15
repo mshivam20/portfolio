@@ -5,6 +5,7 @@ import "./index.css";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Skill from "./components/Skill.jsx";
+import ProjectCarousel from "./components/Project.jsx";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,8 @@ root.render(
         <Home />
         <About />
         <Skill />
+        <ProjectCarousel />
+        
     </React.StrictMode>
 );
 
