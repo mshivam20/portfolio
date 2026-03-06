@@ -1,4 +1,9 @@
 import React from "react";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+
+import "./main.css";
 
 
 // ProjectCarousel.jsx
@@ -6,10 +11,10 @@ import { useState } from "react";
 
 
 const projects = [
-  { id: 1, title: "Project One" },
-  { id: 2, title: "Project Two" },
-  { id: 3, title: "Project Three" },
-  { id: 4, title: "Project Four" },
+  { id: 1, title: "Microsoft Clone", image: project1, description:"Built a mobile-first clone of the Microsoft homepage to practice Tailwind CSS, focusing on responsive UI design and utility-first styling." ,url:"https://mshivam20.github.io/microsoft/"},
+  { id: 2, title: "AI Powered Deburger", image: project2 , description:"Developed an AI-powered debugging tool using LLMs that detects code errors, explains issues, and suggests solutions. Contributed to research and documentation as part of the team.", url:"https://deburger.omnarkhede.tech/"},
+  { id: 3, title: "Detectify", image: project3 , description:"Created an AI-based forensic analysis tool that analyzes and organizes UFDR mobile data files to help identify potential digital evidence. Contributed to research and documentation in the project.", url:"https://detectify1.vercel.app/" },
+  { id: 4, title: "Coming soon", url:"" },
 ];
 
  function ProjectCarousel() {
@@ -39,7 +44,9 @@ const projects = [
   };
 
   return (
-    <section className="relative w-full h-[500px] flex items-center justify-center bg-gray-900 overflow-hidden">
+    <div>
+      <h1 className="text-white text-4xl font-bold ml-40 m-5">Projects</h1>
+    <section className="relative   w-full h-125 flex items-center justify-center bg-gray-900 overflow-hidden">
 
       {/* Left Arrow */}
       <button
@@ -58,7 +65,7 @@ const projects = [
       </button>
 
       {/* Cards */}
-      <div className="relative w-[900px] h-[350px]">
+      <div className="relative w-225 h-88">
 
         {projects.map((project, index) => {
           const position = getPosition(index);
@@ -68,7 +75,7 @@ const projects = [
               key={project.id}
               className={`
                 absolute top-0 left-1/2 -translate-x-1/2
-                w-[300px] h-full
+                w-75 h-full
                 transition-all duration-500 ease-in-out
                 ${
                   position === "center"
@@ -81,16 +88,19 @@ const projects = [
                 }
               `}
             >
-              <div className="bg-white rounded-2xl shadow-xl p-6 h-full flex items-center justify-center">
-                <h2 className="text-xl font-bold">
-                  {project.title}
-                </h2>
+              <h1>Projects</h1>
+              <div id="projects" className="bg-white rounded-2xl shadow-xl p-2 h-full   justify-center">
+                
+                <img src={project.image} alt="" className=" w-full h-45 rounded-2xl"/><br />
+                <a href={project.url} className=""><h2 className="text-xl font-bold hover:text-blue-800">{project.title}</h2></a>
+                <p className="text-gray-600 text-sm">{project.description}</p>
               </div>
             </div>
           );
         })}
       </div>
     </section>
+    </div>
   );
 }
 export default ProjectCarousel;
