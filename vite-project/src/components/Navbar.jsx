@@ -1,13 +1,15 @@
 import React,{useState} from "react";
 import "./main.css";
+import profile from "../assets/profile.png";
+
 
 
 function Navbar(){
     const [isMenuOpen,setIsMenuOpen] = useState(false);
     return(
         <nav className="h-14 "> 
-        <div className="bg-[rgb(1,2,22)]  w-full h-14 text-amber-50  font-bold fixed flex justify-between items-center px-4 border-b border-blue-300 ">
-            <h1>Shivam Murkute</h1>
+        <div className="nav  w-full h-14 text-amber-50  font-bold fixed flex justify-between items-center px-4 border-b border-blue-300 ">
+            <div className="flex justify-center items-center"><img src={profile} alt="" className="w-8 rounded-full m-2" /><h1>Shivam Murkute</h1></div>
             <div className="flex pr-4 ">
                 <a href=""><img src="./src/assets/github.png" alt=""  className="w-6 bg-white rounded-4xl mr-4"/></a>
                 <a href=""><img src="./src/assets/linkedin.png" alt="" className="w-6 mr-4"/></a>

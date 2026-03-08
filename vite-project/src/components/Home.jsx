@@ -34,12 +34,12 @@ function Home() {
 
   return (
     <div id="home" className="home w-full h-fit">
-      <div className="flex mt-35 h-fit  ml-70">
+      <div className="flex mt-35 h-80  ml-50">
         <div className="w-90 mt-5">
-          <h1 className="text-white text-4xl font-bold">Hello I'm</h1>
-          <h1 className="text-white text-4xl font-bold">Shivam</h1>
-          <h1 className="text-white text-4xl font-bold">and I'm a</h1>
-          <h1 className=" text-4xl font-bold text-blue-400">
+          <h1 className="text-white text-6xl font-bold">Hello I'm</h1>
+          <h1 className="text-white text-6xl font-bold">Shivam</h1>
+          <h1 className="text-white text-6xl font-bold">and I'm a</h1>
+          <h1 className=" text-6xl font-bold text-blue-400">
             {text[t].slice(0, c)}
           </h1>
         </div>
@@ -47,7 +47,7 @@ function Home() {
         <img
           src={profile}
           alt="profile"
-          className="w-60 h-60 rounded-full"
+          className="w-80 h-80 rounded-full ml-30 "
         />
       </div>
     </div>

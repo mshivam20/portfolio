@@ -45,8 +45,8 @@ const projects = [
 
   return (
     <div id="projects">
-      <h1 className="text-white text-4xl font-bold ml-40 m-5">Projects</h1>
-    <section className="relative   w-full h-125 flex items-center justify-center bg-gray-900 ">
+      <h1 className="text-white text-4xl font-bold ml-40 m-5 mb-10">Projects</h1>
+    <section className="project relative   w-full h-125 flex items-center justify-center  ">
 
       {/* Left Arrow */}
       <button
@@ -88,7 +88,7 @@ const projects = [
                 }
               `}
             >
-              <h1>Projects</h1>
+              
               <div  className="bg-white rounded-2xl shadow-xl p-2 h-full   justify-center">
                 
                 <img src={project.image} alt="" className=" w-full h-45 rounded-2xl"/><br />

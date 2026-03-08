@@ -1,9 +1,29 @@
 body{
-    background: rgb(1, 2, 22);
+  background: linear-gradient(180deg, #010216, #0a0f2c, #111a3a);
     
 }
 
 html{
     scroll-behavior: smooth;
+}
+body{
+  font-family: 'Space Grotesk', sans-serif;
+}
+.nav{
+    
+ 
+
+  background: #060b26;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+
+}
+.about{
+    background: linear-gradient(180deg, #111a3a, #16245a, #1f2a78);
+}
+.project{
+    background: linear-gradient(135deg, #0a0f2c, #0f3460, #2575fc);
+}
+.skill{
+     background: linear-gradient(135deg, #0a0f2c, #0f3460, #2575fc);
 }
 
