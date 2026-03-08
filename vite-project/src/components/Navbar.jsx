@@ -11,8 +11,8 @@ function Navbar(){
         <div className="nav  w-full h-14 text-amber-50  font-bold fixed flex justify-between items-center px-4 border-b border-blue-300 ">
             <div className="flex justify-center items-center"><img src={profile} alt="" className="w-8 rounded-full m-2" /><h1>Shivam Murkute</h1></div>
             <div className="flex pr-4 ">
-                <a href=""><img src="./src/assets/github.png" alt=""  className="w-6 bg-white rounded-4xl mr-4"/></a>
-                <a href=""><img src="./src/assets/linkedin.png" alt="" className="w-6 mr-4"/></a>
+                <a href="https://github.com/mshivam20"><img src="./src/assets/github.png" alt=""  className="w-6 bg-white rounded-4xl mr-4"/></a>
+                <a href="https://www.linkedin.com/in/shivam-murkute-a89934336?utm_source=share_via&utm_content=profile&utm_medium=member_android"><img src="./src/assets/linkedin.png" alt="" className="w-6 mr-4"/></a>
                 <button onClick={()=>setIsMenuOpen(!isMenuOpen)} >menu</button>
             </div>
         </div>
