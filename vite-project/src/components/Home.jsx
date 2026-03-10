@@ -33,13 +33,13 @@ function Home() {
   }, [c, del, t]);
 
   return (
-    <div id="home" className="home w-full h-fit">
-      <div className="flex mt-35 h-80  ml-50">
-        <div className="w-90 mt-5">
-          <h1 className="text-white text-6xl font-bold">Hello I'm</h1>
-          <h1 className="text-white text-6xl font-bold">Shivam</h1>
-          <h1 className="text-white text-6xl font-bold">and I'm a</h1>
-          <h1 className=" text-6xl font-bold text-blue-400">
+    <div id="home" className="home w-full min-h-screen pt-12 pb-10 px-4 md:px-0 flex items-center md:items-start">
+      <div className="flex flex-col-reverse md:flex-row mt-10 md:mt-24 md:h-80 w-full max-w-6xl mx-auto md:ml-50 items-center md:items-start">
+        <div className="w-full md:w-90 mt-5 text-center md:text-left">
+          <h1 className="text-white text-4xl md:text-6xl font-bold">Hello I'm</h1>
+          <h1 className="text-white text-4xl md:text-6xl font-bold">Shivam</h1>
+          <h1 className="text-white text-4xl md:text-6xl font-bold">and I'm a</h1>
+          <h1 className="text-3xl md:text-6xl font-bold text-blue-400 mt-2 md:mt-0">
             {text[t].slice(0, c)}
           </h1>
         </div>
@@ -47,7 +47,7 @@ function Home() {
         <img
           src={profile}
           alt="profile"
-          className="w-80 h-80 rounded-full ml-30 "
+          className="w-48 h-48 md:w-80 md:h-80 rounded-full mb-8 md:mb-0 md:ml-30 shadow-2xl"
         />
       </div>
     </div>

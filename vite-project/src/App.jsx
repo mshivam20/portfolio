@@ -17,7 +17,9 @@ root.render(
         <Skill />
         <ProjectCarousel />
         <Contact />
-        
+        <footer className="text-gray-400 text-center py-6 border-t border-gray-800 mt-10">
+            <p>&copy; {new Date().getFullYear()} All rights reserved by Shivam Murkute</p>
+        </footer>
     </React.StrictMode>
 );
 
